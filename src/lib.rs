@@ -227,7 +227,7 @@ impl Display for SimulationCommand {
 /// 
 /// A `Header` can be parsed from VCD with [`Parser::parse_header`], or create an
 /// empty `Header` with [`Header::default`].
-#[derive(Debug, Default)]
+#[derive(Clone, Debug, Default)]
 #[non_exhaustive]
 pub struct Header {
     /// `$date` text
